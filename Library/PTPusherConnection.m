@@ -97,7 +97,7 @@ NSString *const PTPusherConnectionPongEvent        = @"pusher:pong";
   
   NSData *JSONData = [[PTJSON JSONParser] JSONDataFromObject:object];
   NSString *message = [[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding];
-  [socket send:message];
+  [socket sendString:message error:nil];
 }
 
 #pragma mark - SRWebSocket delegate methods

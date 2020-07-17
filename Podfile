@@ -8,7 +8,7 @@ inhibit_all_warnings!
 
 def import_pods
   pod 'Reachability', '~> 3.1'
-  pod 'SocketRocket', '~> 0.5.0'
+  pod 'SocketRocketTact'
   pod 'ReactiveCocoa', '~> 2.1'
 end
 
@@ -19,7 +19,7 @@ end
 
 
 target 'libPusher' do
-  platform :ios, '6.0'
+  platform :ios, '11.0'
   import_pods
 end
 
@@ -29,12 +29,12 @@ target 'libPusher-OSX' do
 end
 
 target 'libPusher_ReactiveExtensions.a' do
-  platform :ios, '6.0'
+  platform :ios, '11.0'
   import_pods
 end
 
 target 'SampleApp' do
-  platform :ios, '6.0'
+  platform :ios, '11.0'
   import_pods
 end
 
@@ -44,7 +44,7 @@ target 'SampleAppOSX' do
 end
 
 target 'UnitTests' do
-  platform :ios, '6.0'
+  platform :ios, '11.0'
   import_pods
   import_test_pods
 end
@@ -56,7 +56,7 @@ target 'UnitTests-OSX' do
 end
 
 target 'Functional Specs' do
-  platform :ios, '6.0'
+  platform :ios, '11.0'
   import_pods
   import_test_pods
 end

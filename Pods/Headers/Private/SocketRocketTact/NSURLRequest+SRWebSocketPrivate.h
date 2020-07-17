@@ -1,0 +1,1 @@
+../../../SocketRocketTact/SocketRocket/Internal/NSURLRequest+SRWebSocketPrivate.h

@@ -1,0 +1,1 @@
+../../../SocketRocketTact/SocketRocket/Internal/Security/SRPinningSecurityPolicy.h

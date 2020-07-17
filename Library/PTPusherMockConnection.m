@@ -30,7 +30,7 @@
 
 - (void)connect
 {
-  [self webSocketDidOpen:nil];
+  [self webSocketDidOpen:[[SRWebSocket alloc] initWithURL:[NSURL URLWithString:@""]]];
   
   NSInteger socketID = (NSInteger)[NSDate timeIntervalSinceReferenceDate];
 
@@ -40,7 +40,7 @@
 
 - (void)disconnect
 {
-  [self webSocket:nil didCloseWithCode:self.disconnectionCode reason:nil wasClean:YES];
+  [self webSocket:[[SRWebSocket alloc] initWithURL:[NSURL URLWithString:@""]] didCloseWithCode:self.disconnectionCode reason:nil wasClean:YES];
 }
 
 - (void)send:(id)object
@@ -71,12 +71,12 @@
   
   NSString *message = [[PTJSON JSONParser] JSONStringFromObject:event];
   
-  [self webSocket:nil didReceiveMessage:message];
+  [self webSocket:[[SRWebSocket alloc] initWithURL:[NSURL URLWithString:@""]] didReceiveMessage:message];
 }
 
 - (void)simulateUnexpectedDisconnection
 {
-  [self webSocket:nil didCloseWithCode:kPTPusherSimulatedDisconnectionErrorCode reason:nil wasClean:NO];
+  [self webSocket:[[SRWebSocket alloc] initWithURL:[NSURL URLWithString:@""]] didCloseWithCode:kPTPusherSimulatedDisconnectionErrorCode reason:nil wasClean:NO];
 }
 
 #pragma mark - Client event handling
