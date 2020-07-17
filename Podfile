@@ -8,7 +8,6 @@ inhibit_all_warnings!
 
 def import_pods
   pod 'Reachability', '~> 3.1'
-  pod 'SocketRocket', '~> 0.5.0'
   pod 'ReactiveCocoa', '~> 2.1'
 end
 

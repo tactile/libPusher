@@ -21,22 +21,26 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
-  - SocketRocket (0.5.1)
 
 DEPENDENCIES:
   - Kiwi (~> 2.4)
   - OHHTTPStubs (~> 5.0)
   - Reachability (~> 3.1)
   - ReactiveCocoa (~> 2.1)
-  - SocketRocket (~> 0.5.0)
+
+SPEC REPOS:
+  trunk:
+    - Kiwi
+    - OHHTTPStubs
+    - Reachability
+    - ReactiveCocoa
 
 SPEC CHECKSUMS:
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   OHHTTPStubs: 592f74439d2d72615115cf99a954237a3fbe26e5
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
-  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: 61da03ba9b95e949d53763ad14de13019054f1e9
+PODFILE CHECKSUM: 6c18693c8482403afb0d70a5808b76ace9dd4273
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.9.3
