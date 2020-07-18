@@ -22,8 +22,6 @@ Pod::Spec.new do |s|
   }
 
   s.subspec 'Core' do |subspec|
-    subspec.dependency 'SocketRocket', '0.5.1'
-
     subspec.source_files         = 'Library/**/*.{h,m}'
     subspec.private_header_files = 'Library/Private Headers/*'
     subspec.xcconfig             = {
